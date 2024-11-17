@@ -1,4 +1,5 @@
-﻿using Serenity.ComponentModel;
+using MovieSerenity.Modules.MovieDB.Movie;
+using Serenity.ComponentModel;
 using System;
 
 namespace MovieSerenity.MovieDB.Forms;
@@ -13,4 +14,6 @@ public class MovieForm
     public int Year { get; set; }
     public DateTime ReleaseDate { get; set; }
     public int Runtime { get; set; }
+    public MovieKind Kind { get; set; }
+
 }
