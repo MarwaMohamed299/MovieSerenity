@@ -1,4 +1,4 @@
-﻿using FluentMigrator;
+using FluentMigrator;
 
 namespace MovieSerenity.Migrations.DefaultDB;
 [DefaultDB, MigrationKey(20141103_1400)]
@@ -105,5 +105,7 @@ public class DefaultDB_20141103_1400_Initial : AutoReversingMigration
             LanguageId = "vi-VN",
             LanguageName = "Vietnamese (Vietnam)"
         });
+
+
     }
 }
