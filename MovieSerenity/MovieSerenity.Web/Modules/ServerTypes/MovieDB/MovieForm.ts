@@ -1,5 +1,4 @@
 ﻿import { StringEditor, IntegerEditor, DateEditor, EnumEditor, LookupEditor, PrefixedContext, initFormType } from "@serenity-is/corelib";
-import { GenreDialog } from "../../Administration/Genre/GenreDialog";
 import { MovieKind } from "../Modules/MovieDB.Movie.MovieKind";
 
 export interface MovieForm {
@@ -10,7 +9,7 @@ export interface MovieForm {
     ReleaseDate: DateEditor;
     Runtime: IntegerEditor;
     Kind: EnumEditor;
-    GenreId: LookupEditor;
+    GenreList: LookupEditor;
 }
 
 export class MovieForm extends PrefixedContext {
@@ -37,11 +36,10 @@ export class MovieForm extends PrefixedContext {
                 'ReleaseDate', w2,
                 'Runtime', w1,
                 'Kind', w3,
-                'GenreId', w4
+                'GenreList', w4
             ]);
         }
     }
 }
 
 [MovieKind]; // referenced types
-queueMicrotask(() => [GenreDialog]); // referenced dialogs

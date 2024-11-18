@@ -1,4 +1,5 @@
 using MovieSerenity.Modules.MovieDB.Movie;
+using MovieTutorial;
 using Serenity.ComponentModel;
 using System;
 using System.ComponentModel;
@@ -20,9 +21,9 @@ public class MovieColumns
 
     [DisplayName("Runtime in Minutes"), Width(150), AlignRight]
     public int Runtime { get; set; }
-
-    [Width(100), QuickFilter]
-    public string GenreName { get; set; }
     public MovieKind Kind { get; set; }
+    [Width(200), GenreListFormatter]
+    public List<int> GenreList { get; set; }
+
 
 }
