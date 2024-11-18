@@ -75,10 +75,20 @@ namespace texts {
             }
         }
 
+        namespace Adminstration {
+
+            namespace Genre {
+                export const GenreId: string;
+                export const Name: string;
+            }
+        }
+
         namespace MovieDB {
 
             namespace Movie {
                 export const Description: string;
+                export const GenreId: string;
+                export const GenreName: string;
                 export const Kind: string;
                 export const MovieId: string;
                 export const ReleaseDate: string;
@@ -190,6 +200,9 @@ export const Texts: typeof texts = proxyTexts({}, '', {
             User: {},
             UserPermission: {},
             UserRole: {}
+        },
+        Adminstration: {
+            Genre: {}
         },
         MovieDB: {
             Movie: {}

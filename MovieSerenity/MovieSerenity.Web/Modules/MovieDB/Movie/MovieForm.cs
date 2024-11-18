@@ -15,5 +15,7 @@ public class MovieForm
     public DateTime ReleaseDate { get; set; }
     public int Runtime { get; set; }
     public MovieKind Kind { get; set; }
+    public int GenreId { get; set; }
+
 
 }

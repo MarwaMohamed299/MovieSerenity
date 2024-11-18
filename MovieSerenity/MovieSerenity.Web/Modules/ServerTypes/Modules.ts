@@ -1,1 +1,5 @@
-﻿export * from "./Modules/MovieDB.Movie.MovieKind"
+﻿export * from "./Modules/Administration.Genre.Genre.GenreColumns"
+export * from "./Modules/Administration.Genre.Genre.GenreForm"
+export * from "./Modules/Administration.Genre.Genre.GenreRow"
+export * from "./Modules/Administration.Genre.Genre.GenreService"
+export * from "./Modules/MovieDB.Movie.MovieKind"

@@ -5,3 +5,5 @@ using MyPages = MovieSerenity.MovieDB.Pages;
     typeof(MyPages.MoviePage), icon: "fa-video-camera")]
 [assembly: NavigationLink(6100, "Movie Database/Movies",
     typeof(MyPages.MoviePage), icon: "fa-video-camera")]
+[assembly: NavigationLink(6100, "Movie Database/Generes",
+    typeof(MyPages.MoviePage), icon: "fa-thumb-tack")]

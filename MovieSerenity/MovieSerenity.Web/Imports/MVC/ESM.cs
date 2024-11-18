@@ -2,6 +2,7 @@
 
 public static partial class ESM
 {
+    public const string GenrePage = "~/esm/Modules/Administration/Genre/GenrePage.js";
     public const string LanguagePage = "~/esm/Modules/Administration/Language/LanguagePage.js";
     public const string LoginPage = "~/esm/Modules/Membership/Account/Login/LoginPage.js";
     public const string MoviePage = "~/esm/Modules/MovieDB/Movie/MoviePage.js";
@@ -15,6 +16,11 @@ public static partial class ESM
     {
         public static partial class Administration
         {
+            public static partial class Genre
+            {
+                public const string GenrePage = "~/esm/Modules/Administration/Genre/GenrePage.js";
+            }
+
             public static partial class Language
             {
                 public const string LanguagePage = "~/esm/Modules/Administration/Language/LanguagePage.js";
