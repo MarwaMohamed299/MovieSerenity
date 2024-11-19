@@ -91,7 +91,7 @@ public partial class Startup
             loggingBuilder.AddDebug();
         });
 
-        services.AddScoped<IMovieCastDeleteHandler, MovieCastDeleteHandler>();
+        services.AddSingleton<IMovieCastDeleteHandler, MovieCastDeleteHandler>();
         services.AddSingleton<IDataMigrations, AppServices.DataMigrations>();
         services.AddSingleton<IElevationHandler, DefaultElevationHandler>();
         services.AddSingleton<IEmailSender, EmailSender>();

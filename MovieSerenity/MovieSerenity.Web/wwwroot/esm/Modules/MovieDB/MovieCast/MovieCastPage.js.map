@@ -2,6 +2,6 @@
   "version": 3,
   "sources": ["../../../../../Modules/MovieDB/MovieCast/MovieCastPage.tsx"],
   "sourcesContent": ["import { gridPageInit } from '@serenity-is/corelib';\r\nimport { MovieCastEditDialog } from './MovieCastEditDialog';\r\n\r\nexport default () => gridPageInit(MovieCastEditDialog);"],
-  "mappings": "wSAAA,IAAAA,EAA6B,SAG7B,IAAOC,EAAQC,EAAA,OAAM,gBAAaC,CAAmB,EAAtC",
+  "mappings": "kNAAA,IAAAA,EAA6B,SAG7B,IAAOC,EAAQC,EAAA,OAAM,gBAAaC,CAAmB,EAAtC",
   "names": ["import_corelib", "MovieCastPage_default", "__name", "MovieCastEditDialog"]
 }

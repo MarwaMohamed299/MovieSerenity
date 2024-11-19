@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../Modules/ServerTypes/Modules/MovieDB.Person.Gender.ts"],
-  "sourcesContent": ["\uFEFFimport { Decorators } from \"@serenity-is/corelib\";\r\n\r\nexport enum Gender {\r\n    Male = 1,\r\n    Female = 2\r\n}\r\nDecorators.registerEnumType(Gender, 'MovieSerenity.Modules.MovieDB.Person.Gender');"],
-  "mappings": "+CAAC,IAAAA,EAA2B,SAEhBC,OACRA,IAAA,KAAO,GAAP,OACAA,IAAA,OAAS,GAAT,SAFQA,OAAA,IAIZ,aAAW,iBAAiBA,EAAQ,6CAA6C",
-  "names": ["import_corelib", "Gender"]
-}
