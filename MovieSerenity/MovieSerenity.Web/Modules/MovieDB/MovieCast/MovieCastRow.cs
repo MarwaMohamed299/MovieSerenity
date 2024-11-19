@@ -1,3 +1,4 @@
+using MovieSerenity.MovieDb;
 using Serenity.ComponentModel;
 using Serenity.Data;
 using Serenity.Data.Mapping;
@@ -22,7 +23,7 @@ public sealed class MovieCastRow : Row<MovieCastRow.RowFields>, IIdRow, INameRow
     [ServiceLookupEditor(typeof(MovieRow), Service = "MovieDB/Movie/List")]
     public int? MovieId { get => fields.MovieId[this]; set => fields.MovieId[this] = value; }
 
-    [DisplayName("Person"), NotNull, ForeignKey(typeof(MovieDb.PersonRow)), LeftJoin(jPerson), TextualField(nameof(PersonFullName))]
+    [DisplayName("Actor/Actress"), NotNull, ForeignKey(typeof(MovieDb.PersonRow)), LeftJoin(jPerson), TextualField(nameof(PersonFullName))]
     [LookupEditor(typeof(MovieDb.PersonRow), Async = true)]
     public int? PersonId { get => fields.PersonId[this]; set => fields.PersonId[this] = value; }
 
@@ -32,9 +33,8 @@ public sealed class MovieCastRow : Row<MovieCastRow.RowFields>, IIdRow, INameRow
     [DisplayName("Movie Title"), Origin(jMovie, nameof(MovieRow.Title))]
     public string MovieTitle { get => fields.MovieTitle[this]; set => fields.MovieTitle[this] = value; }
 
-    [DisplayName("Person"), Origin(jPerson, nameof(MovieDb.PersonRow.FullName))]
+    [DisplayName("Actor/Actress"), Origin(jPerson, nameof(PersonRow.FullName))]
     public string PersonFullName { get => fields.PersonFullName[this]; set => fields.PersonFullName[this] = value; }
-
     public class RowFields : RowFieldsBase
     {
         public Int32Field MovieCastId;

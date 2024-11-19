@@ -1,8 +1,8 @@
-import { Decorators, WidgetProps } from '@serenity-is/corelib';
-import { MovieCastColumns, MovieCastForm, MovieCastRow } from '../../ServerTypes/MovieDB';
-import { GridEditorBase, GridEditorDialog } from '@serenity-is/extensions';
+import { Decorators} from '@serenity-is/corelib';
+import {  MovieCastForm, MovieCastRow } from '../../ServerTypes/MovieDB';
+import {  GridEditorDialog } from '@serenity-is/extensions';
 
-@Decorators.registerClass('MovieSerenity.MovieDB.MovieCastEditor')
+@Decorators.registerEditor('MovieSerenity.MovieDB.MovieCastEditor')
 export class MovieCastEditDialog extends GridEditorDialog<MovieCastRow> {
     protected getFormKey() { return MovieCastForm.formKey; }
     protected getNameProperty() { return MovieCastRow.nameProperty; }

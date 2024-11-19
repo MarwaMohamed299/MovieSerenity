@@ -3,8 +3,6 @@ import { Column } from "@serenity-is/sleekgrid";
 import { MovieCastRow } from "./MovieCastRow";
 
 export interface MovieCastColumns {
-    MovieCastId: Column<MovieCastRow>;
-    MovieTitle: Column<MovieCastRow>;
     PersonFullName: Column<MovieCastRow>;
     Character: Column<MovieCastRow>;
 }
