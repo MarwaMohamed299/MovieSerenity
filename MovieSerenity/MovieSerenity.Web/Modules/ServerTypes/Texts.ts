@@ -97,12 +97,35 @@ namespace texts {
                 export const Year: string;
             }
 
+            namespace MovieCast {
+                export const Character: string;
+                export const MovieCastId: string;
+                export const MovieId: string;
+                export const MovieTitle: string;
+                export const PersonFullName: string;
+                export const PersonId: string;
+            }
+
             namespace MovieGenres {
                 export const GenreId: string;
                 export const GenreName: string;
                 export const MovieGenreId: string;
                 export const MovieId: string;
                 export const MovieTitle: string;
+            }
+        }
+
+        namespace MovieDb {
+
+            namespace Person {
+                export const BirthDate: string;
+                export const BirthPlace: string;
+                export const FirstName: string;
+                export const FullName: string;
+                export const Gender: string;
+                export const Height: string;
+                export const LastName: string;
+                export const PersonId: string;
             }
         }
     }
@@ -213,7 +236,11 @@ export const Texts: typeof texts = proxyTexts({}, '', {
         },
         MovieDB: {
             Movie: {},
+            MovieCast: {},
             MovieGenres: {}
+        },
+        MovieDb: {
+            Person: {}
         }
     },
     Forms: {

@@ -58,6 +58,5 @@ public sealed class MovieRow : Row<MovieRow.RowFields>, IIdRow, INameRow
         public EnumField<MovieKind> Kind;
         public ListField<int> GenreList;
 
-
     }
 }

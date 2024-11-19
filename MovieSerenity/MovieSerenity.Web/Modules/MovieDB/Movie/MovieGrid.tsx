@@ -1,7 +1,9 @@
 import { Decorators, EntityGrid, first, localText, LookupEditor, QuickSearchField } from '@serenity-is/corelib';
-import { MovieColumns, MovieRow, MovieService } from '../../ServerTypes/MovieDB';
 import { MovieDialog } from './MovieDialog';
 import { MovieListRequest } from '../../ServerTypes/Modules/MovieDB.Movie.MovieListRequest';
+import { MovieRow } from '../../ServerTypes/MovieDB/MovieRow';
+import { MovieService } from '../../ServerTypes/MovieDB/MovieService';
+import { MovieColumns } from '../../ServerTypes/MovieDB/MovieColumns';
 
 @Decorators.registerClass('MovieSerenity.MovieDB.MovieGrid')
 export class MovieGrid extends EntityGrid<MovieRow , any> {
