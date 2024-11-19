@@ -22,9 +22,8 @@ public sealed class MovieCastRow : Row<MovieCastRow.RowFields>, IIdRow, INameRow
     [DisplayName("Movie"), NotNull, ForeignKey(typeof(MovieRow)), LeftJoin(jMovie), TextualField(nameof(MovieTitle))]
     [ServiceLookupEditor(typeof(MovieRow), Service = "MovieDB/Movie/List")]
     public int? MovieId { get => fields.MovieId[this]; set => fields.MovieId[this] = value; }
-
-    [DisplayName("Actor/Actress"), NotNull, ForeignKey(typeof(MovieDb.PersonRow)), LeftJoin(jPerson), TextualField(nameof(PersonFullName))]
-    [LookupEditor(typeof(MovieDb.PersonRow), Async = true)]
+    [DisplayName("Actor/Actress"), NotNull, ForeignKey(typeof(PersonRow)), LeftJoin(jPerson), TextualField(nameof(PersonFullName))]
+    [LookupEditor(typeof(PersonRow), Async = true)]
     public int? PersonId { get => fields.PersonId[this]; set => fields.PersonId[this] = value; }
 
     [DisplayName("Character"), Size(50), QuickSearch, NameProperty]

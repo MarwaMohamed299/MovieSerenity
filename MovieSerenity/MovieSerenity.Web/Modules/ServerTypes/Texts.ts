@@ -86,6 +86,7 @@ namespace texts {
         namespace MovieDB {
 
             namespace Movie {
+                export const CastList: string;
                 export const Description: string;
                 export const GenreList: string;
                 export const Kind: string;

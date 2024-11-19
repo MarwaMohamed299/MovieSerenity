@@ -1,5 +1,6 @@
 using MovieSerenity.Modules.Administration.Genre.Genre;
 using MovieSerenity.Modules.MovieDB.Movie;
+using MovieSerenity.MovieDB.Columns;
 using Serenity.ComponentModel;
 using Serenity.Data;
 using Serenity.Data.Mapping;
@@ -46,6 +47,10 @@ public sealed class MovieRow : Row<MovieRow.RowFields>, IIdRow, INameRow
     [LinkingSetRelation(typeof(MovieGenresRow), nameof(MovieGenresRow.MovieId), nameof(MovieGenresRow.GenreId))]
     public List<int> GenreList { get => fields.GenreList[this]; set => fields.GenreList[this] = value; }
 
+    [DisplayName("Cast List"), NotMapped]
+    [MasterDetailRelation(foreignKey: nameof(MovieCastRow.MovieId), ColumnsType = typeof(MovieCastColumns))]
+    public List<MovieCastRow> CastList { get => fields.CastList[this]; set => fields.CastList[this] = value; }
+
     public class RowFields : RowFieldsBase
     {
         public Int32Field MovieId;
@@ -57,6 +62,7 @@ public sealed class MovieRow : Row<MovieRow.RowFields>, IIdRow, INameRow
         public Int32Field Runtime;
         public EnumField<MovieKind> Kind;
         public ListField<int> GenreList;
+        public RowListField<MovieCastRow> CastList;
 
     }
 }

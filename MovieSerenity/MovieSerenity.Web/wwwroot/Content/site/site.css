@@ -11,7 +11,6 @@
 .s-PermissionCheckEditor {
   min-height: 450px;
 }
-
-.s-MovieDB-MovieCastEditDialog > .model-dialog {
-    width:450px;
+.s-MovieDB-MovieCastEditDialog > .modal-dialog {
+  width: 450px;
 }

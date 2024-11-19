@@ -8,4 +8,3 @@ using CastPage = MovieSerenity.MovieDB.Pages;
     typeof(MoviesPage.MoviePage), icon: "fa-video-camera")]
 [assembly: NavigationLink(int.MaxValue, "Movie Database/Person",
     typeof(MyPages.PersonPage), icon: "fa-users")]
-[assembly: NavigationLink(6400, "Movie Database/Cast", typeof(CastPage.MovieCastPage), icon: null)]
