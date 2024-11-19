@@ -20,5 +20,6 @@ public class PersonForm
 
     [Tab("Movies"), IgnoreName, PersonMovieGrid, LabelWidth("0")]
     public string MoviesGrid { get; set; }
-
+    public string PrimaryImage { get; set; }
+    public string GalleryImages { get; set; }
 }

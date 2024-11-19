@@ -26,5 +26,7 @@ public class MovieForm
     public MovieKind Kind { get; set; }
     [Width(200)]
     public List<int> GenreList { get; set; }
+    public string PrimaryImage { get; set; }
+    public string GalleryImages { get; set; }
 
 }

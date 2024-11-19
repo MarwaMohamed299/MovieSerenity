@@ -1,4 +1,4 @@
-﻿import { StringEditor, TextAreaEditor, IntegerEditor, DateEditor, EnumEditor, LookupEditor, PrefixedContext, initFormType } from "@serenity-is/corelib";
+﻿import { StringEditor, TextAreaEditor, IntegerEditor, DateEditor, EnumEditor, LookupEditor, ImageUploadEditor, MultipleImageUploadEditor, PrefixedContext, initFormType } from "@serenity-is/corelib";
 import { MovieCastEditor } from "../../MovieDB/MovieCast/MovieCastEditor";
 import { MovieKind } from "../Modules/MovieDB.Movie.MovieKind";
 
@@ -12,6 +12,8 @@ export interface MovieForm {
     Runtime: IntegerEditor;
     Kind: EnumEditor;
     GenreList: LookupEditor;
+    PrimaryImage: ImageUploadEditor;
+    GalleryImages: MultipleImageUploadEditor;
 }
 
 export class MovieForm extends PrefixedContext {
@@ -31,6 +33,8 @@ export class MovieForm extends PrefixedContext {
             var w4 = DateEditor;
             var w5 = EnumEditor;
             var w6 = LookupEditor;
+            var w7 = ImageUploadEditor;
+            var w8 = MultipleImageUploadEditor;
 
             initFormType(MovieForm, [
                 'Title', w0,
@@ -41,7 +45,9 @@ export class MovieForm extends PrefixedContext {
                 'ReleaseDate', w4,
                 'Runtime', w3,
                 'Kind', w5,
-                'GenreList', w6
+                'GenreList', w6,
+                'PrimaryImage', w7,
+                'GalleryImages', w8
             ]);
         }
     }

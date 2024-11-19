@@ -88,9 +88,11 @@ namespace texts {
             namespace Movie {
                 export const CastList: string;
                 export const Description: string;
+                export const GalleryImages: string;
                 export const GenreList: string;
                 export const Kind: string;
                 export const MovieId: string;
+                export const PrimaryImage: string;
                 export const ReleaseDate: string;
                 export const Runtime: string;
                 export const Storyline: string;
@@ -123,10 +125,12 @@ namespace texts {
                 export const BirthPlace: string;
                 export const FirstName: string;
                 export const FullName: string;
+                export const GalleryImages: string;
                 export const Gender: string;
                 export const Height: string;
                 export const LastName: string;
                 export const PersonId: string;
+                export const PrimaryImage: string;
             }
         }
     }
