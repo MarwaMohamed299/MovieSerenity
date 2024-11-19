@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../../../../Modules/MovieDB/MovieCast/MovieCastPage.tsx"],
-  "sourcesContent": ["import { gridPageInit } from '@serenity-is/corelib';\r\n//import { MovieCastEditor } from './MovieCastEditor';\nimport { MovieCastEditDialog } from './MovieCastEditor';\r\n\r\nexport default () => gridPageInit(MovieCastEditDialog);"],
+  "sourcesContent": ["import { gridPageInit } from '@serenity-is/corelib';\r\n//import { MovieCastEditor } from './MovieCastEditor';\r\nimport { MovieCastEditDialog } from './MovieCastEditor';\r\n\r\nexport default () => gridPageInit(MovieCastEditDialog);"],
   "mappings": "6PAAA,IAAAA,EAA6B,SAI7B,IAAOC,EAAQC,EAAA,OAAM,gBAAaC,CAAmB,EAAtC",
   "names": ["import_corelib", "MovieCastPage_default", "__name", "MovieCastEditDialog"]
 }
