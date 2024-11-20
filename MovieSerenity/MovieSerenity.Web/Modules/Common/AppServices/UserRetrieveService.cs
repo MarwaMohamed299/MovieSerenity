@@ -1,4 +1,4 @@
-﻿using MyRow = MovieSerenity.Administration.UserRow;
+using MyRow = MovieSerenity.Administration.UserRow;
 
 namespace MovieSerenity.AppServices;
 public class UserRetrieveService(ITwoLevelCache cache, ISqlConnections sqlConnections)
@@ -18,7 +18,8 @@ public class UserRetrieveService(ITwoLevelCache cache, ISqlConnections sqlConnec
             PasswordHash = user.PasswordHash,
             PasswordSalt = user.PasswordSalt,
             UpdateDate = user.UpdateDate,
-            LastDirectoryUpdate = user.LastDirectoryUpdate
+            LastDirectoryUpdate = user.LastDirectoryUpdate,
         };
     }
+
 }
